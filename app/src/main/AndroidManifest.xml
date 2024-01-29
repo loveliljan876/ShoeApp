@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codingstuff.shoeapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -16,6 +15,10 @@
             android:name=".views.DetailedActivity"
             android:exported="false" />
         <activity
+            android:name=".views.MapsActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".views.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -24,6 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAbqzrY9KKnsOQ3WYiIadtWM-5sTnO-As8"/>
     </application>
 
 </manifest>
